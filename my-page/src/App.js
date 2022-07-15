@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const data = async () => {
       const response = await axios.get(
-        "http://localhost:8080/api/diary?page=1&size=10"
+        "/api/diary?page=1&size=200"
       );
       console.log(response.data.dtoList);
       setPosts(response.data.dtoList);
